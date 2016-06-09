@@ -81,7 +81,7 @@ public class SeptoriaApiicolaModel  extends I18nImpl implements Model{
         Date firstSeasonPestObservationDate = firstSeasonPestObservation != null ? 
                 new WeatherUtil().normalizeToExactDate(firstSeasonPestObservation.getTimeOfObservation(), this.timeZone) 
                 : null;
-        System.out.println(this.dataMatrix.toCSV());
+        //System.out.println(this.dataMatrix.toCSV());
         Date currentDate = this.dataMatrix.getFirstDateWithParameterValue(DataMatrix.WET_DAY);
         Date endDate = this.dataMatrix.getLastDateWithParameterValue(DataMatrix.WET_DAY);
         Calendar cal = Calendar.getInstance(timeZone);
