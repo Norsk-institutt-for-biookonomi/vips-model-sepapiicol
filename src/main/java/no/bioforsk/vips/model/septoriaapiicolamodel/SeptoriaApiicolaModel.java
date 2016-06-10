@@ -81,7 +81,7 @@ public class SeptoriaApiicolaModel  extends I18nImpl implements Model{
         Date firstSeasonPestObservationDate = firstSeasonPestObservation != null ? 
                 new WeatherUtil().normalizeToExactDate(firstSeasonPestObservation.getTimeOfObservation(), this.timeZone) 
                 : null;
-        //System.out.println(this.dataMatrix.toCSV());
+        
         Date currentDate = this.dataMatrix.getFirstDateWithParameterValue(DataMatrix.WET_DAY);
         Date endDate = this.dataMatrix.getLastDateWithParameterValue(DataMatrix.WET_DAY);
         Calendar cal = Calendar.getInstance(timeZone);
@@ -233,19 +233,17 @@ public class SeptoriaApiicolaModel  extends I18nImpl implements Model{
         this.dataMatrix = new DataMatrix();
         WeatherUtil wUtil = new WeatherUtil();
         this.getObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        
+        // Setting time zone
         this.timeZone = TimeZone.getTimeZone((String) config.getConfigParameter("timeZone"));
-        
+        // Getting observation data
         this.pestObservations = this.getObjectMapper().convertValue(config.getConfigParameter("pestObservations"), new TypeReference<List<ObservationImpl>>(){});
         if(this.pestObservations != null && ! this.pestObservations.isEmpty())
         {
             for(Observation o:this.pestObservations)
             {
-                this.dataMatrix.setParamIntValueForDate(wUtil.normalizeToExactHour(o.getTimeOfObservation(), timeZone), DataMatrix.PEST_OBSERVED, 1);
+                this.dataMatrix.setParamIntValueForDate(wUtil.normalizeToExactDate(o.getTimeOfObservation(), timeZone), DataMatrix.PEST_OBSERVED, 1);
             }
         }
-        
-        // Setting timezone
         
         // Getting weather data
         
