@@ -17,7 +17,7 @@
  * 
  */
 
-package no.bioforsk.vips.model.septoriaapiicolamodel;
+package no.nibio.vips.model.septoriaapiicolamodel;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -53,7 +53,7 @@ import no.nibio.vips.util.WeatherUtil;
  * @copyright 2016 <a href="http://www.nibio.no/">NIBIO</a>
  * @author Tor-Einar Skog <tor-einar.skog@nibio.no>
  */
-public class SeptoriaApiicolaModel  extends I18nImpl implements Model{
+public class SeptoriaApiicolaModel extends I18nImpl implements Model{
 
     private final static ModelId MODEL_ID = new ModelId("SEPAPIICOL");
     

@@ -17,7 +17,7 @@
  * 
  */
 
-package no.bioforsk.vips.model.septoriaapiicolamodel;
+package no.nibio.vips.model.septoriaapiicolamodel;
 
 import no.nibio.vips.util.DateMap;
 

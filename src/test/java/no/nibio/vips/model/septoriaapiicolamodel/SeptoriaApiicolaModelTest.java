@@ -16,8 +16,9 @@
  * along with SeptoriaApiicolaModel.  If not, see <http://www.nibio.no/licenses/>.
  * 
  */
-package no.bioforsk.vips.model.septoriaapiicolamodel;
+package no.nibio.vips.model.septoriaapiicolamodel;
 
+import no.nibio.vips.model.septoriaapiicolamodel.SeptoriaApiicolaModel;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
