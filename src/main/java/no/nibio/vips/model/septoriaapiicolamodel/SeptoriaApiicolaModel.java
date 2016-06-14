@@ -322,10 +322,18 @@ public class SeptoriaApiicolaModel extends I18nImpl implements Model{
     }
 
     private Boolean isWetConditionsMet(Date startOfYesterdayData, Date endOfCurrentDay) throws ModelExcecutionException {
+        // Check if leaf wetness data series ends sometime today
+        Date lastLeafWetnessTime = this.dataMatrix.getLastDateWithParameterValue(DataMatrix.BT);
+        if(endOfCurrentDay.after(lastLeafWetnessTime))
+        {
+            endOfCurrentDay = lastLeafWetnessTime;
+        }
+        
+        // Check conditions
         Calendar cal = Calendar.getInstance(timeZone);
         Date currentHour = startOfYesterdayData;
         Integer consecutiveWetHours = 0;
-        while(currentHour.before(endOfCurrentDay))
+        while(currentHour.compareTo(endOfCurrentDay) <= 0)
         {
             Double hourLeafWetness = this.dataMatrix.getParamDoubleValueForDate(currentHour, DataMatrix.BT);
             if(hourLeafWetness == null)
