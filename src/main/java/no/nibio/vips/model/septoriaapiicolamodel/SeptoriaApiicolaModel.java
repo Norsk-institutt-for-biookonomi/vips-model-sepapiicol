@@ -89,7 +89,7 @@ public class SeptoriaApiicolaModel extends I18nImpl implements Model{
         while(currentDate.compareTo(endDate) <= 0)
         {
             Result result = new ResultImpl();
-            result.setResultValidTime(currentDate);
+            result.setValidTimeStart(currentDate);
             Integer warningStatus = Result.WARNING_STATUS_NO_RISK;
             if(this.dataMatrix.getParamStringValueForDate(currentDate, DataMatrix.WET_DAY).equals(Boolean.TRUE.toString()))
             {
