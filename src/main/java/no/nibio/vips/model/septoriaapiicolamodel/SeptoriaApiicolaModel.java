@@ -236,7 +236,7 @@ public class SeptoriaApiicolaModel extends I18nImpl implements Model{
         // Setting time zone
         this.timeZone = TimeZone.getTimeZone((String) config.getConfigParameter("timeZone"));
         // Getting observation data
-        this.pestObservations = this.getObjectMapper().convertValue(config.getConfigParameter("pestObservations"), new TypeReference<List<ObservationImpl>>(){});
+        this.pestObservations = this.getObjectMapper().convertValue(config.getConfigParameter("pestObservations"), new TypeReference<List<Observation>>(){});
         if(this.pestObservations != null && ! this.pestObservations.isEmpty())
         {
             for(Observation o:this.pestObservations)
