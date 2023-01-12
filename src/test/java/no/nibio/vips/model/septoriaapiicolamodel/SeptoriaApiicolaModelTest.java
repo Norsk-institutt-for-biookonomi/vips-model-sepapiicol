@@ -119,6 +119,7 @@ public class SeptoriaApiicolaModelTest {
         SeptoriaApiicolaModel instance = new SeptoriaApiicolaModel();
         String result = instance.getModelName();
         assertNotNull(result);
+        assertTrue(!result.isBlank());
     }
 
     
