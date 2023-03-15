@@ -210,10 +210,10 @@ public class SeptoriaApiicolaModel extends I18nImpl implements Model{
                 "\t\t\"startDateGrowth\":\"2012-03-25\",\n" +
                 "\t\t\"endDateCalculation\":\"2012-03-25\",\n" +
                 "\t\t\"pestObservations\":[\n" +
-                "\t\t\t{" +
-                "\t\t\t\t\"timeOfObservation\":\"2016-04-20T00:00:00+02:00\"," +
-                "\t\t\t\t\"observationData\":{}" +
-                "\t\t\t\"}" +
+                "\t\t\t{\n" +
+                "\t\t\t\t\"timeOfObservation\":\"2016-04-20T00:00:00+02:00\",\n" +
+                "\t\t\t\t\"observationData\":{}\n" +
+                "\t\t\t}\n" +
                 "\t\t],\n" +
                 "\t\t\"observations\":[\n" +
                 "\t\t{\n" +

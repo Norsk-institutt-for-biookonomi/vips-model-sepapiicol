@@ -89,6 +89,7 @@ public class SeptoriaApiicolaModelTest {
         pestObservations.add(obs);
         config.setConfigParameter("pestObservations", pestObservations);
         instance.setConfiguration(config);
+        //System.out.println(config.toJSON());
         List<Result> result = instance.getResult();
         /*for(Result res:result)
         {
