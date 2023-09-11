@@ -8,7 +8,7 @@
     </parent>
     <groupId>no.bioforsk.vips.model</groupId>
     <artifactId>SeptoriaApiicolaModel</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <repositories>
         <repository>
