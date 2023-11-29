@@ -1,7 +1,6 @@
 /*
- * Copyright (c) 2016 NIBIO <http://www.nibio.no/>. 
- * 
- * This file is part of LygusRugulipennisModel.
+ * Copyright (c) 2018 NIBIO <http://www.nibio.no/>. 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -14,7 +13,7 @@
  *
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- * 
+ *
  */
 
 package no.nibio.vips.model.septoriaapiicolamodel;
@@ -138,21 +137,23 @@ public class SeptoriaApiicolaModel extends I18nImpl implements Model{
     @Override
     public String getLicense() {
         return "\n" +
-            "Copyright (c) 2016 NIBIO <http://www.nibio.no/>. \n" +
-            "\n" +
-            "This file is part of SeptoriaApiicolaModel.\n" +
-            "SeptoriaApiicolaModel is free software: you can redistribute it and/or modify\n" +
-            "it under the terms of the NIBIO Open Source License as published by \n" +
-            "NIBIO, either version 1 of the License, or (at your option) any\n" +
-            "later version.\n" +
-            "\n" +
-            "SeptoriaApiicolaModel is distributed in the hope that it will be useful,\n" +
-            "but WITHOUT ANY WARRANTY; without even the implied warranty of\n" +
-            "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n" +
-            "NIBIO Open Source License for more details.\n" +
-            "\n" +
-            "You should have received a copy of the NIBIO Open Source License\n" +
-            "along with SeptoriaApiicolaModel.  If not, see <http://www.nibio.no/licenses/>.";
+            "/*\n" +
+            " * Copyright (c) 2018 NIBIO <http://www.nibio.no/>. \n" +
+            " *\n" +
+            " * This program is free software: you can redistribute it and/or modify\n" +
+            " * it under the terms of the GNU Affero General Public License as published by\n" +
+            " * the Free Software Foundation, either version 3 of the License, or\n" +
+            " * (at your option) any later version.\n" +
+            " *\n" +
+            " * This program is distributed in the hope that it will be useful,\n" +
+            " * but WITHOUT ANY WARRANTY; without even the implied warranty of\n" +
+            " * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n" +
+            " * GNU Affero General Public License for more details.\n" +
+            " *\n" +
+            " * You should have received a copy of the GNU Affero General Public License\n" +
+            " * along with this program.  If not, see <https://www.gnu.org/licenses/>.\n" +
+            " *\n" +
+            " */";
     }
 
     @Override
