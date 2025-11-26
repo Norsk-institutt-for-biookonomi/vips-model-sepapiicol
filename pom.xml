@@ -11,7 +11,7 @@
 
     <groupId>no.nibio.vips.model</groupId>
     <artifactId>SeptoriaApiicolaModel</artifactId>
-    <version>1.1.13</version>
+    <version>1.1.14-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -34,7 +34,7 @@
         </dependency>
     </dependencies>
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 </project>
